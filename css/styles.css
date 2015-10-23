@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Karla);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
 * {
     padding: 0;
@@ -7,7 +7,7 @@
 
 html,
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Poiret One', Raleway;
     height: 100%;
     width: 100%;
 }

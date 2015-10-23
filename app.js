@@ -1,7 +1,8 @@
 var app = angular.module('portfolio', ['ngRoute']);
 
-app.config(function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
+        //homepage
         .when('/', {
             templateUrl: 'views/home.html',
             controller: 'MainCtrl'
@@ -14,7 +15,12 @@ app.config(function ($routeProvider) {
             redirectTo: '/'
         });
 
-});
+    //
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+}]);
 
 
 app.controller('MainCtrl', function () {});
